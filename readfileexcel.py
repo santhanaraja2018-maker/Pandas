@@ -1,6 +1,6 @@
 import pandas as pd
 
-df=pd.read_excel("sample.xlsx",sheet_name="Sheet1")
+df=pd.read_excel(r"C:\Users\SANTHANA RAJA S\Desktop\Git\Pandas\sample.xlsx",sheet_name="Sheet1")
 
 df1=df.head()
 df1.to_csv("firstfive.csv",index=False) # saving some data as csv file

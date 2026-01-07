@@ -1,6 +1,6 @@
 import pandas as pd
 
-df=pd.read_csv("data.csv")
+df=pd.read_csv(r"C:\Users\SANTHANA RAJA S\Desktop\Git\Pandas\data.csv")
 
 print(df)
 print(df.head()) # it will give top 5 values
