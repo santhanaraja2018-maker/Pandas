@@ -4,7 +4,7 @@ data={
     "id" : [1,2,3,4],
     "name" : ['John','Raja','Jana','Nive'],
     "email" : ["john@gmail.com","Raja@gmail.com","Jana@gmail.com","Nive@gmail.com"],
-    "age":[30,25,18,25]
+    "age":[30,25,0,25]
 }
 
 df=pd.DataFrame(data, index=['a','b','c','d'])
@@ -13,7 +13,9 @@ print(df.loc['b'])  #here we use loc to access data using lables
 print(df.iloc[0])  #here we use iloc to access data using indexes
 print(df.iloc[2,3]) #here we use iloc[2,3] to access data using indexes 2nd row 3rd index data
 
-print(df[df['age']>20]) #here it prints all records where age >30
+print(df[df['age']==0]) #here it prints all records where age >30
+df.loc[df['age']==0, 'age'] = 20
+print (df['age'])
 
 print(df[df['name'].isin(['Raja'])]) #here it filters string value / name is in list form so here also we pass it as list
 

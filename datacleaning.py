@@ -12,7 +12,7 @@ print(df2)
 df3=pd.DataFrame({"name" : ['Nive','Raja','Jana','Nive'],
                  'age': [25,25,18,25]})
 
-print(df3.duplicated())     #to show duplicated value as true or false
+print("The duplicated values : ",df3.duplicated())     #to show duplicated value as true or false
 print(df3.drop_duplicates())  #to remove duplicated values
 
 df3=df3.rename(columns={'name':'Full_name'})  #to rename a column name
